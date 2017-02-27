@@ -57,7 +57,7 @@ tar cf "${x}"-repositories-"${DATE}".tar.bz2 *
 ## UPLOADING TAR FILE TO S3
 ####
 
-aws s3 cp "${x}"-repositories-"${DATE}".tar.bz2 s3://"${BUCKETNAME}"/"${BUCKETPREFIX}"/
+aws s3 cp "${x}"-repositories-"${DATE}".tar.bz2 s3://"${BUCKETNAME}"/"${BUCKETPREFIX}"/"${x}"/
 
 done
 
